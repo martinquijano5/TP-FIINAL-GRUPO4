@@ -1,0 +1,16 @@
+﻿@using TpFinalGrupo4.Models;
+
+
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<h2>SNKRS ARG</h2>
+<ul>
+    @foreach(Noticia unaNoticia in ViewBag.ListaNoticia)
+    {
+        <li>@unaNoticia.ID_Articulo-@unaNoticia.Titulo-@unaNoticia.Fecha-@unaNoticia.texto-@unaNoticia.ID_Autor</li>
+    }
+
+</ul>
+
